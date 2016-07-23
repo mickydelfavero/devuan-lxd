@@ -1,0 +1,5 @@
+lxd (2.0.3) jessie; urgency=medium
+
+  * My own 2.0.3 devuan package based on ubuntu's one.
+
+ -- Name <email>  date

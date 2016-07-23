@@ -1,0 +1,14 @@
+--- lxd-2.0.0~beta4.orig/dist/src/github.com/coreos/go-systemd/activation/files.go
++++ lxd-2.0.0~beta4/dist/src/github.com/coreos/go-systemd/activation/files.go
+@@ -27,11 +27,6 @@ const (
+ )
+ 
+ func Files(unsetEnv bool) []*os.File {
+-	if unsetEnv {
+-		defer os.Unsetenv("LISTEN_PID")
+-		defer os.Unsetenv("LISTEN_FDS")
+-	}
+-
+ 	pid, err := strconv.Atoi(os.Getenv("LISTEN_PID"))
+ 	if err != nil || pid != os.Getpid() {
+ 		return nil

@@ -1,0 +1,5 @@
+lxd-client_2.0.0~rc6_amd64.deb admin optional
+lxd_2.0.0~rc6_amd64.deb admin optional
+lxc2_2.0.0~rc6_all.deb metapackages extra
+lxd-tools_2.0.0~rc6_amd64.deb admin optional
+golang-github-lxc-lxd-dev_2.0.0~rc6_all.deb admin optional

@@ -1,0 +1,82 @@
+Template: lxd/force-image-sync
+Type: boolean
+Default: false
+_Description: Do you want to sync LXD images even when it isn't started yet?
+
+Template: lxd/setup-bridge
+Type: boolean
+Default: true
+_Description: Do you want to setup a new bridge for LXD containers?
+
+Template: lxd/use-existing-bridge
+Type: boolean
+Default: false
+_Description: Do you want to use an existing bridge?
+
+Template: lxd/bridge-name
+Type: string
+Default: lxdbr0
+_Description: Bridge interface name:
+
+Template: lxd/bridge-dnsmasq
+Type: string
+_Description: Path to dnsmasq config:
+ When provided, this is included in the bridge configuration.
+
+Template: lxd/bridge-domain
+Type: string
+Default: lxd
+_Description: Domain name:
+
+Template: lxd/bridge-ipv4
+Type: boolean
+Default: false
+_Description: Do you want to setup an IPv4 subnet?
+
+Template: lxd/bridge-ipv4-address
+Type: string
+_Description: IPv4 address:
+
+Template: lxd/bridge-ipv4-netmask
+Type: string
+_Description: IPv4 netmask:
+
+Template: lxd/bridge-ipv4-dhcp-first
+Type: string
+_Description: First DHCP address:
+
+Template: lxd/bridge-ipv4-dhcp-last
+Type: string
+_Description: Last DHCP address:
+
+Template: lxd/bridge-ipv4-dhcp-leases
+Type: string
+_Description: Max number of DHCP clients:
+
+Template: lxd/bridge-ipv4-nat
+Type: boolean
+Default: true
+_Description: Do you want to NAT the IPv4 traffic?
+
+Template: lxd/bridge-ipv6
+Type: boolean
+Default: false
+_Description: Do you want to setup an IPv6 subnet?
+
+Template: lxd/bridge-ipv6-address
+Type: string
+_Description: IPv6 address:
+
+Template: lxd/bridge-ipv6-netmask
+Type: string
+_Description: IPv6 netmask:
+
+Template: lxd/bridge-ipv6-nat
+Type: boolean
+Default: false
+_Description: Do you want to NAT the IPv6 traffic?
+
+Template: lxd/bridge-http-proxy
+Type: boolean
+Default: true
+_Description: Do you want to setup an HTTP proxy?

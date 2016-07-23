@@ -1,0 +1,6 @@
+usr/bin/lxd
+usr/bin/lxd-bridge-proxy usr/lib/lxd/
+
+lxd-bridge/lxd-bridge usr/lib/lxd/
+
+usr/share/man/man1/lxd.1
